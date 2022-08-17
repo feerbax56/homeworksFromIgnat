@@ -1,0 +1,21 @@
+.message {
+    max-width: 250px;
+    min-height: 60px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: #a7e800;
+    align-items: center;
+    margin: 1em;
+}
+
+.ava {
+    width: 40px;
+    height: 40px;
+}
+
+.ava img {
+    height: 100%;
+    width: auto;
+    border-radius: 45%;
+    margin-left: 5px;
+}
