@@ -14,10 +14,11 @@ function Message(props: MessageProps) {
             <div className={classes.ava}>
                 <img src={props.avatar}/>
             </div>
-            <div>
+            <div className={classes.textArea}>
                 <div>check gh-page branch</div>
             </div>
         </div>
+
     )
 }
 

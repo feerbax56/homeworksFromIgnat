@@ -19,3 +19,37 @@
     border-radius: 45%;
     margin-left: 5px;
 }
+
+.textArea {
+    background-color: #020;
+    padding: 5px 8px 8px 10px;
+    border-radius: 7px 7px 7px 0px;
+    position: relative;
+    margin-right: 5px;
+}
+
+.textArea::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 190px;
+    /*display: block;*/
+    height: 15px;
+    width: 15px;
+    transform: rotate(270deg); /*провернуть в нужжную сторону*/
+    z-index: 2;
+    background: inherit; /* задаем background как у родителя */
+    clip-path: url(#svgPath); /* "отсекаем" лишнее с помощью svg-маски */
+}
+
+.time {
+    color: #234524;
+}
+
+.name {
+    color: #8c8aa2;
+}
+
+.message {
+    color: #90a291;
+}
