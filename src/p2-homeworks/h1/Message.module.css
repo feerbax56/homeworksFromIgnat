@@ -1,4 +1,4 @@
-.message {
+.messageWindow {
     max-width: 250px;
     min-height: 60px;
     display: grid;
@@ -42,14 +42,27 @@
     clip-path: url(#svgPath); /* "отсекаем" лишнее с помощью svg-маски */
 }
 
+.textInput {
+    display: grid;
+    grid-template-areas:
+    "a a"
+    "b c";
+    grid-template-columns: .75fr .25fr;
+}
+
 .time {
     color: #234524;
+    grid-area: c;
+    display: flex;
+    align-items: flex-end;
 }
 
 .name {
     color: #8c8aa2;
+    grid-area: a;
 }
 
 .message {
     color: #90a291;
+    grid-area: b;
 }
