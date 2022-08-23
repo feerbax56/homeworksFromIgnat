@@ -65,4 +65,5 @@
 .message {
     color: #90a291;
     grid-area: b;
+    word-wrap: break-word;
 }
