@@ -20,20 +20,20 @@ const defaultAffairs: Array<AffairType> = [ // Done!
 ]
 
 // pure helper functions
-export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): Array<AffairType> => { // Done!
+export const filterAffairs = (affairs: AffairType[], filter: FilterType): Array<AffairType> => { // Done!
     switch (filter) {
         case 'low':
-            return defaultAffairs.filter(t => t.priority === 'low')
+            return affairs.filter(t => t.priority === 'low')
         case 'middle':
-            return defaultAffairs.filter(t => t.priority === 'middle')
+            return affairs.filter(t => t.priority === 'middle')
         case 'high':
-            return defaultAffairs.filter(t => t.priority === 'high')
+            return affairs.filter(t => t.priority === 'high')
         default:
             return affairs;
     }
 }
 export const deleteAffair = (affairs: Array<AffairType>, _id: number): Array<AffairType> => { // Done!
-    return defaultAffairs.filter(t => t._id !== _id)// need to fix
+    return affairs.filter(t => t._id !== _id)// need to fix
 }
 
 function HW2() {
