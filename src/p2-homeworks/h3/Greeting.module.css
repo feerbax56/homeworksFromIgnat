@@ -5,6 +5,8 @@
 .error {
     /*border: 1px solid red;*/
     margin: 5px;
+    color: red;
+    height: 20px;
 }
 
 .notError {
@@ -14,7 +16,7 @@
 
 .btn {
     border-radius: 3px;
-    width: 30px;
+    width: 50px;
     height: 20px;
     background-color: #8c8aa2;
     margin: 5px;
