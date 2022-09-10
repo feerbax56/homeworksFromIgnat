@@ -3,5 +3,19 @@
 }
 
 .error {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
+    margin: 5px;
+}
+
+.notError {
+    border: 1px solid greenyellow;
+    margin: 4px;
+}
+
+.btn {
+    border-radius: 3px;
+    width: 30px;
+    height: 20px;
+    background-color: #8c8aa2;
+    margin: 5px;
 }
